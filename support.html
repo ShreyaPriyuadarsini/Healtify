@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Healthify</title>
+    <link rel="stylesheet" href="support.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" class="css">
+    <link rel="stylesheet" href="./footer.css" class="css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <nav class="navbar container">
+            <a href="index.html" class="brand">HEALTIFY</a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="/feature.html" class="menu-link">Feature</a></li>
+                    <li class="menu-item"><a href="/aboutus.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="/support.html" class="menu-link">Support</a></li>
+                </ul>
+            </div>
+            <a href="/discover.html" class="menu-block">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section support-hero">
+            <div class="container">
+                <h1 class="heading-xl centered">Support Center</h1>
+                <p class="paragraph centered">
+                    We’re here to help you with any questions or issues. Explore our FAQs, submit a query, or contact us
+                    directly for personalized assistance.
+                </p>
+            </div>
+        </section>
+
+        <section class="section faq-section">
+            <div class="container">
+                <h2 class="heading-lg centered">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I track my steps with Healthify?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Healthify automatically syncs with your device’s step counter. Navigate to the
+                                "Dashboard" or "Step History" page to view your daily steps. Ensure your device’s motion
+                                permissions are enabled for accurate tracking.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can I set reminders for water intake?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! On the "Water Intake" page, you can set custom reminders to stay hydrated throughout
+                                the day. Adjust the frequency and times to suit your schedule.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I access meditation and yoga sessions?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Visit the "Meditation & Yoga" page to access guided sessions. Choose from a variety of
+                                programs tailored for relaxation, focus, or stress relief.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What should I do if I forget my password?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>On the "Sign In" page, click "Forgot Password?" and follow the instructions to reset your
+                                password via email. If you encounter issues, contact us at <a
+                                    href="mailto:support@healthify.com" class="contact-email">support@healthify.com</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-form-section">
+            <div class="container">
+                <h2 class="heading-lg centered">Get in Touch</h2>
+                <p class="paragraph centered">
+                    Have a specific question or need assistance? Fill out the form below, and our team will get back to
+                    you as soon as possible.
+                </p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-darken">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="container">
+                <h2 class="heading-lg centered">Contact Us</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:support@healthify.com"
+                            class="contact-email">support@healthify.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919876543210" class="contact-link">+91 9876543210</a> | <a
+                            href="tel:+918765432109" class="contact-link">+91 8765432109</a></p>
+                    <p><strong>Address:</strong> 123 Fitness Street, Wellness City, India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript for FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const faqAnswer = faqItem.querySelector('.faq-answer');
+                const faqIcon = button.querySelector('.faq-icon');
+
+                // Toggle active class
+                faqItem.classList.toggle('active');
+
+                // Toggle answer visibility
+                if (faqItem.classList.contains('active')) {
+                    faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+                    faqIcon.textContent = '−';
+                } else {
+                    faqAnswer.style.maxHeight = '0';
+                    faqIcon.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

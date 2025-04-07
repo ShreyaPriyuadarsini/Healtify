@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Healthify</title>
+    <link rel="stylesheet" href="discover.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="brand">HEALTHIFY</a>
+            <div class="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a href="/index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="/feature.html" class="menu-link">Feature</a></li>
+                    <li class="menu-item"><a href="/aboutus.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="/support.html" class="menu-link">Support</a></li>
+                 </ul>
+            </div>
+            <button class="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section discover-hero">
+            <div class="container">
+                <h1 class="heading-xl centered">Discover Wellness with Healthify</h1>
+                <p class="paragraph centered">
+                    Explore new features, wellness tips, and inspiring stories to elevate your fitness journey. Start discovering today!
+                </p>
+            </div>
+        </section>
+
+        <section class="section featured-section">
+            <div class="container">
+                <h2 class="heading-lg centered">Featured Content</h2>
+                <div class="featured-slider">
+                    <div class="slider-container">
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New Step Challenges">
+                            <h3 class="slide-title">New Step Challenges</h3>
+                            <p class="slide-text">Join our latest step challenges to stay motivated and win rewards!</p>
+                            <button class="btn btn-darken slide-btn">Learn More</button>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5e090e6e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Hydration Tips">
+                            <h3 class="slide-title">Hydration Tips</h3>
+                            <p class="slide-text">Discover expert tips to stay hydrated and boost your health.</p>
+                            <button class="btn btn-darken slide-btn">Learn More</button>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990d71cee436?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Success Story">
+                            <h3 class="slide-title">Success Story</h3>
+                            <p class="slide-text">Read how Sarah transformed her life with Healthify!</p>
+                            <button class="btn btn-darken slide-btn">Learn More</button>
+                        </div>
+                    </div>
+                    <button class="slider-btn prev-btn">←</button>
+                    <button class="slider-btn next-btn">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container">
+                <h2 class="heading-lg centered">Ready to Explore?</h2>
+                <p class="paragraph centered">
+                    Dive into your wellness journey with Healthify’s powerful tools and inspiring content. Start now!
+                </p>
+                <button class="btn btn-darken cta-btn">Get Started</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript for Slider Functionality
+        const sliderContainer = document.querySelector('.slider-container');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        let currentSlide = 0;
+
+        function updateSlider() {
+            sliderContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0; // Loop back to start
+            }
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = slides.length - 1; // Loop to end
+            }
+            updateSlider();
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+            updateSlider();
+        }, 5000);
+    </script>
+</body>
+</html>
